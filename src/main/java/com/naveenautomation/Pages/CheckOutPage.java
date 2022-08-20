@@ -50,6 +50,11 @@ public class CheckOutPage {
 
 		place.sendKeys(names);
 	}
+	public void postalCodeSendKeys(String names) {
+
+		place.sendKeys(names);
+	}
+	
 
 	public void billingdetailclick() {
 

@@ -8,6 +8,7 @@ public class AccountCreatedPage {
 	
 	WebDriver driver;
 	
+	
 	private WebElement accountAlertText = driver.findElement(By.cssSelector("div#content h1"));
 			
 		

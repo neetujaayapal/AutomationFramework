@@ -30,12 +30,14 @@ public class RegisterPage {
 
 	WebElement submitButton = driver.findElement(By.cssSelector("div.buttons input:nth-of-type(2)"));
 
-	public void randomMethod() {
+	public String randomMethod() {
 
 		Random rnd = new Random();
 
 		int ranNumber = rnd.nextInt(1000);
 		ranEmail = "name" + ranNumber + "@gmail.com";
+		
+		return ranEmail;
 
 	}
 

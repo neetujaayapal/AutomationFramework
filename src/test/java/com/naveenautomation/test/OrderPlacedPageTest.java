@@ -4,12 +4,26 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.naveenautomation.Pages.OrderPlacedPage;
+
 public class OrderPlacedPageTest {
 	
-	WebDriver driver;
+	OrderPlacedPage test1 = new OrderPlacedPage();
 	
-	WebElement accountElement =driver.findElement(By.cssSelector("ul.dropdown-menu.dropdown-menu-right>li:nth-of-type(5) a"));
-
-	WebElement logOutMessageElement = driver.findElement(By.cssSelector("div#content h1"));
+	public void orderPlacedTextField() {
+		test1.orderPlacedText();
+	}
+	
+	public void accountButtonTest() {
+		test1.accountclick();
+	}
+	
+	public void logButtonTest() {
+		test1.logclick();
+	}
+	
+	
+	
+	
 
 }

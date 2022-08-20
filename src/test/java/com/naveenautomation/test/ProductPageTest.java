@@ -4,23 +4,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.naveenautomation.Pages.ProductPage;
+
 public class ProductPageTest {
 
-	WebDriver driver;
-
-	private WebElement addToCartElement = driver
-			.findElement(By.cssSelector("div#content>div:nth-of-type(2)>div:nth-of-type(2) div.button-group span"));
-
-	private WebElement checkOutElement = driver.findElement(By.cssSelector("ul.list-inline>li:nth-of-type(5) span"));
-
-	public void addToCartClick() {
-
-		addToCartElement.click();
+	ProductPage test1 = new ProductPage();
+	
+	public void addToCartTest() {
+		
+		test1.addToCartClick();
 	}
-
-	public void checkOutClick() {
-
-		checkOutElement.click();
+	
+	public void checkOutTest() {
+		test1.checkOutClick();
 	}
 
 }

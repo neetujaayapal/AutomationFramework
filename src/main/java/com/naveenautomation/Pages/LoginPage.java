@@ -24,12 +24,14 @@ public class LoginPage {
 	WebElement loginBtnField = driver
 			.findElement(By.cssSelector("div#account-login div#content>div>div:nth-of-type(2) div.well form>input"));
 
-	public void randomMethod() {
+	public String randomMethod() {
 
 		Random rnd = new Random();
 
 		int ranNumber = rnd.nextInt(1000);
 		ranEmail = "name" + ranNumber + "@gmail.com";
+		
+		return ranEmail;
 
 	}
 
@@ -43,9 +45,9 @@ public class LoginPage {
 		password.sendKeys(name);
 	}
 
-	public void loginClick(WebElement element) {
+	public void loginClick() {
 
-		ac.click(loginBtnField).perform();
+		loginBtnField.click();
 
 	}
 
